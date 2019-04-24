@@ -42,6 +42,24 @@
                                 <p>Dashboard</p>
                             </a>
                         </li>
+                        <li <?php if ($menu=='profile'){ echo 'class="active"'; } ?>>
+                            <a href="<?php echo base_url() . 'index.php/pages/profile' ?>">
+                                <i class="material-icons">person</i>
+                                <p>Profil Pengguna</p>
+                            </a>
+                        </li>
+                        <li <?php if ($menu=='table'){ echo 'class="active"'; } ?>>
+                            <a href="<?php echo base_url() . 'index.php/pages/tables' ?>">
+                                <i class="material-icons">content_paste</i>
+                                <p>Daftar Anggota</p>
+                            </a>
+                        </li>
+                        <li <?php if ($menu=='maps'){ echo 'class="active"'; } ?>>
+                            <a href="<?php echo base_url() . 'index.php/pages/maps' ?>">
+                                <i class="material-icons">location_on</i>
+                                <p>Peta</p>
+                            </a>
+                        </li>
                         <li class="active-pro">
                             <a href="#">
                                 <i class="material-icons">face</i>

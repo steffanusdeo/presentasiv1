@@ -23,4 +23,20 @@ class Pages extends CI_Controller {
         $data = array('menu' => 'dashboard');
         $this->template->load('view_template', 'view_dashboard', $data);
     }
+
+    function tables() {
+        $data = array('menu' => 'table');
+        $this->template->load('view_template', 'view_table', $data);
+    }
+
+    function profile() {
+        $data = array('menu' => 'profile');
+        $this->template->load('view_template', 'view_profile', $data);
+    }
+
+    function maps() {
+        $data = array('menu' => 'maps');
+        $this->template->load('view_template', 'view_maps', $data);
+    }
+
 }
